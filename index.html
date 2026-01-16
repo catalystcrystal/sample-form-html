@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sample form</title>
+</head>
+<body>
+    <h1>This is a sample form that acts as a baseplate for a functional form. Feel free to use this template!</h1>
+    <hr>
+   <div class="container">
+     <form action="./src/thanks.html" method="post">
+        <label for="fname">Name:</label>
+        <input type="text" name="fname" class="first_name" placeholder="Enter your name" required>
+        <br>
+        <label for="mname">Middle name (optional):</label>
+        <input type="text" name="mname" class="middle_name" placeholder="Enter your middle name">
+        <br>
+        <label for="lname">Last name:</label>
+        <input type="text" name="lname" class="last_name" placeholder="Enter your last name" required>
+        <br>
+        <label for="age">Age: </label>
+        <input type="number" name="age" class="age" placeholder="Enter your age" required>
+        <br>
+        <label for="address">Address: </label>
+        <input type="text" name="address" class="address" placeholder="Enter your address" required>
+        <br>
+        <label for="education">Your education level:</label>
+        <select name="education" class="education">
+            <option value="base-case">-- Select --</option>
+            <option value="option1">10th pass</option>
+            <option value="option2">12th pass</option>
+            <option value="option3">College</option>
+            <option value="option4">Diploma</option>
+        </select>
+        <br>
+        <label for="salary-expectations">Your expected salary:</label>
+        <select name="education" class="education">
+            <option value="base-case">-- Select --</option>
+            <option value="option1">&#8377;8,000 - &#8377;16,000</option> <!-- ? "&#8377;" == Indian Rupee symbol. -->
+            <option value="option2">&#8377;16,000 - &#8377;30,000</option>
+            <option value="option3">&#8377;30,000 - &#8377;50,000</option>
+            <option value="option4">&#8377; Other</option>
+        </select>
+        <br>
+        <label for="resume">Upload Your Resume:</label>
+        <button type="submit" style="padding: 5px 5px;">
+            <input type="file" name="resume" class="resume" placeholder="Upload your resume" accept=".pdf,.jpg" required>
+        </button>
+        <br>
+        <button type="submit" class="submit-btn">
+            <a href="./src/thanks.html">Click me to submit!</a>
+        </button>
+    </form>
+   </div>
+</body>
+</html>
